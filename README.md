@@ -29,4 +29,17 @@ stop the docker image
 docker-compose stop 
 ```
 
+## using Docker for production 
+
+build docker image 
+```
+docker build -f Dockerfile.prod -t infidea-sharing-react .
+```
+run docker container 
+```
+docker run -p 1337:80 infidea-sharing-react 
+```
+## using docker-compose for production 
+
+
 source: dockerising a react app https://mherman.org/blog/dockerizing-a-react-app/
